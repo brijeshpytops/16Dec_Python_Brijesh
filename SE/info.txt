@@ -1,0 +1,23 @@
+What is software? and their types.
+SDLC 
+Prototypes models
+HTTP
+SSL
+www
+url
+domain
+ip/port - ipv4&ipv6
+endpoints
+query parameters
+Dfd
+flowchart
+OSI models
+what is internet and how it is work?
+IDE
+GUI
+
+what is programming?
+what is program?
+Types of Programming Language
+What is source code -> bytecode -> machin level code(binary code)[01001]
+what is compiler and interpriter
