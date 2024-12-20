@@ -1,0 +1,390 @@
+What is Software?
+    Software is a set of instructions, data, or programs used to operate computers and execute specific tasks. It acts as a bridge between the user and computer hardware. Without software, hardware would be useless.
+
+
+    1. System Software
+        - Definition: It is the software that manages and controls the computer hardware so that application software can perform its tasks.
+        - Purpose: Acts as an interface between hardware and user applications.
+
+        - Examples:
+        - Operating Systems: Windows, Linux, macOS, Android, iOS
+        - Utility Software: Antivirus, Disk Cleanup, File Management Tools, Backup Software
+        
+    2. Application Software
+        - Definition: It is designed to help users perform specific tasks or applications.
+        - Purpose: Enables users to complete particular activities or tasks.
+
+        types of mobile applications:
+        1] desktop application
+        2] mobile application
+        3] web application
+
+        - Examples:
+        - Productivity Software: Microsoft Office (Word, Excel, PowerPoint)
+        - Media Software: VLC Media Player, Adobe Photoshop
+        - Web Browsers: Google Chrome, Firefox, Safari
+        - Games: Any video game like Call of Duty, Minecraft, etc.
+
+What is SDLC?
+    SDLC stands for Software Development Life Cycle. It is a structured process used for planning, creating, testing, deploying, and maintaining software. SDLC provides a clear, systematic approach to ensure high-quality software is delivered efficiently. 
+
+
+    Phases of SDLC
+The Software Development Life Cycle typically follows 7 key phases. Each phase has a specific goal and deliverables.
+
+1. Planning
+    Objective: Define project goals, scope, resources, costs, and schedules.
+    Key Activities:
+        Feasibility Study (technical, operational, and financial feasibility)
+        Risk Analysis
+        Requirement Gathering
+    Deliverables: Project Plan, Feasibility Report
+
+2. Requirement Analysis
+    Objective: Identify and document software requirements.
+    Key Activities:
+        Interacting with stakeholders (clients, users, etc.)
+        Gathering functional and non-functional requirements
+        Creating Software Requirement Specification (SRS) document
+    Deliverables: SRS Document (Software Requirement Specification)
+
+3. Design
+    Objective: Create a blueprint or design for the software system.
+    Key Activities:
+        Design of system architecture (High-level design)
+        Design of detailed components (Low-level design)
+        Data Flow Diagrams (DFDs), Entity-Relationship Diagrams (ERDs), etc.
+    Deliverables:
+    High-Level Design (HLD)
+    Low-Level Design (LLD)
+
+4. Development (Coding)
+    Objective: Write the actual source code for the software.
+    Key Activities:
+        Developers write code following the HLD and LLD.
+        Use of version control systems (like Git) to track changes.
+        Follow coding standards, frameworks, and best practices.
+    Deliverables: Source Code, Application Files
+
+5. Testing
+    Objective: Identify and fix software defects or bugs.
+    Key Activities:
+        Unit Testing, Integration Testing, System Testing, and Acceptance Testing.
+        Bug identification, tracking, and resolution.
+        Ensuring the software meets the requirements in the SRS.
+    Deliverables:
+    Test Cases, Test Reports
+    Bug Reports
+
+6. Deployment
+    Objective: Deploy the software for production use.
+    Key Activities:
+        Installing the software on a live environment.
+        User training and support.
+        Release Management (sometimes in stages like Alpha, Beta, etc.)
+    Deliverables: Deployed Software, Release Notes, User Manuals
+
+7. Maintenance
+    Objective: Maintain and update the software after release.
+    Key Activities:
+        Fix issues that arise in production (bug fixes).
+        Release updates, new features, and patches.
+        Provide ongoing user support.
+    Deliverables: Software Updates, Maintenance Reports
+
+
+
+SDLC Models
+There are several models to execute the SDLC. Some popular ones include:
+    Waterfall Model (Linear, step-by-step)
+    Agile Model (Iterative, flexible, user feedback-driven)
+    Spiral Model (Risk-driven, iterative)
+    V-Model (Verification & Validation model)
+    Iterative Model (Repetitive development process)
+
+
+Why is SDLC Important?
+    Better Project Management: Clear structure, deliverables, and deadlines.
+    Risk Reduction: Identifies risks early in the process.
+    Cost Control: Detects defects early, reducing development costs.
+    High-Quality Software: Ensures software is well-tested and meets user needs.
+
+
+What is HTTP?
+    HTTP (HyperText Transfer Protocol) is a protocol used to communicate between a client (like a web browser) and a server over the internet. It allows the transfer of hypertext (like HTML pages), images, videos, and other resources that make up a web page.
+
+    HTTP is the foundation of the World Wide Web and enables websites, APIs, and other web services to function.
+
+How HTTP Works?
+    Client Request: The client (browser) sends an HTTP request to the server.
+    Server Response: The server processes the request and sends back an HTTP response, which usually contains the requested data (like a web page, image, or API response).
+
+What is SSL?
+    SSL (Secure Sockets Layer) is a security protocol that establishes an encrypted connection between a web server and a client (browser). It ensures that all data transferred between them is secure and private, protecting against eavesdropping, tampering, and man-in-the-middle (MITM) attacks.
+
+
+    Key Features of SSL
+        Data Encryption: Protects sensitive information (like passwords, credit card details) during transfer.
+        Authentication: Verifies the identity of websites to prevent fraud.
+        Data Integrity: Ensures that data is not altered during transmission.
+
+
+    How Does SSL Work?
+        - Handshake: The client (browser) and server establish a connection and exchange cryptographic keys.
+        - Encryption: Data is encrypted using a public key (accessible to everyone) and decrypted using a private key (only the server has it).
+        - Secure Communication: Data is transmitted securely using the encrypted connection.
+
+    Benefits of SSL
+        - Data Security: Encrypts data to protect it from hackers.
+        - SEO Boost: Google ranks HTTPS websites higher than HTTP.
+        - Trust & Credibility: Websites with an SSL certificate show a padlock icon, increasing user trust.
+
+    Difference Between SSL and TLS
+        - TLS (Transport Layer Security) is the updated version of SSL. While people still refer to it as SSL, modern websites use TLS for better security.
+
+What is WWW?
+    WWW (World Wide Web) is a system of interlinked web pages and resources that can be accessed via the internet using a web browser. It allows users to view and interact with content like text, images, videos, and other media.
+
+    How WWW Works?
+        - User Request: User types a URL in the browser (like www.example.com).
+        - DNS Lookup: The URL is converted into an IP address to locate the server.
+        - Server Response: The server sends back the requested web page.
+        - Page Rendering: The web browser displays the page on the user's screen.
+
+What is a URL?
+    URL (Uniform Resource Locator) is the address of a web resource on the internet. It tells the web browser where to find a specific web page, image, video, or file.
+
+    A URL is like the "address" of a house, but instead of a house, it points to a resource on the internet.
+
+    URL : https://www.example.com:443/path/to/page?query=1#section
+
+    Part	        Example	        Description
+    -------------------------------------------------------------------------------------------------
+    Protocol	    https://	    Specifies the communication method (HTTP or HTTPS)
+    Subdomain	    www.	        An optional part before the domain (like blog.)
+    Domain Name	    example.com	    The name of the website (human-readable address)
+    Port	        :443	        Optional port used for communication (default for HTTPS is 443)
+    Path	        /path/to/page	Specifies the location of a specific page or file
+    Query String	?query=1	    Sends additional data to the server (like search terms)
+    Fragment	    #section	    Points to a specific part (section) of the web page
+
+
+What is IP (Internet Protocol)?
+    An IP (Internet Protocol) address is a unique identifier assigned to devices connected to a network. It acts like an address for devices, enabling them to send and receive data over the internet.
+
+    There are two types of IP addresses:
+
+    IPv4 (Internet Protocol version 4)
+    IPv6 (Internet Protocol version 6)
+
+    IP Address Formats:
+    Type	Address Format	                                            Example	                                    Size
+    -------------------------------------------------------------------------------------------------------------------------
+    IPv4	4 sets of numbers (0-255) separated by dots (.)	            192.168.1.1	                                32-bit
+    IPv6	8 groups of hexadecimal (0-9, a-f) separated by colons (:)	2001:0db8:85a3:0000:0000:8a2e:0370:7334     128-bit
+
+
+What is a Port?
+    A port is a logical endpoint for network communication. It allows multiple services or applications to run on a single IP address. Think of it as an apartment number in a building (the IP address being the building's address).
+
+    Ports range from 0 to 65535, divided into:
+
+    Well-known ports (0-1023): Reserved for system processes (e.g., HTTP = 80, HTTPS = 443, FTP = 21, SSH = 22).
+    Registered ports (1024-49151): Used by software or user processes.
+    Dynamic/Private ports (49152-65535): Temporary ports assigned by the system for short-term communications.
+
+
+What is the OSI Model?
+    The OSI (Open Systems Interconnection) model is a 7-layer framework that defines how data is transferred between computers over a network. Each layer has a specific function, and they work together to enable communication.
+
+    The OSI model is like a blueprint for networking. It helps understand how different hardware and software interact in a network.
+
+Why is the OSI Model Important?
+    Standardization: Ensures different devices and networks can communicate.
+    Troubleshooting: Helps identify which layer is causing network issues.
+    Modularity: Each layer has a specific role, making it easier to design and understand networks.
+
+
+
+7 Layers of the OSI Model (Top to Bottom)
+Layer No.	Layer Name	    Data Unit	Function	                                        Example Protocols/Devices
+-------------------------------------------------------------------------------------------------------------------------
+7	        Application	    Data	    Interface for applications to access the network	HTTP, FTP, SMTP, DNS
+6	        Presentation	Data	    Data translation, encryption, compression	        SSL/TLS, JPEG, ASCII
+5	        Session	        Data	    Establish, manage, and terminate sessions	        APIs, Sockets, Remote Desktop
+4	        Transport	    Segment	    Reliable delivery of data (error checking)	        TCP, UDP
+3	        Network	        Packet	    Routing, logical addressing (IP)	                IP, ICMP, Routers
+2	        Data Link	    Frame	    Physical addressing (MAC) and error detection	    MAC, Ethernet, Switches
+1	        Physical	    Bits	    Physical transfer of raw data (binary)	            Cables, Hubs, NICs, Wi-Fi
+
+
+
+What is the OSI Model?
+The OSI (Open Systems Interconnection) model is a 7-layer framework that defines how data is transferred between computers over a network. Each layer has a specific function, and they work together to enable communication.
+
+The OSI model is like a blueprint for networking. It helps understand how different hardware and software interact in a network.
+
+Why is the OSI Model Important?
+Standardization: Ensures different devices and networks can communicate.
+Troubleshooting: Helps identify which layer is causing network issues.
+Modularity: Each layer has a specific role, making it easier to design and understand networks.
+7 Layers of the OSI Model (Top to Bottom)
+Layer No.	Layer Name	Data Unit	Function	Example Protocols/Devices
+7	Application	Data	Interface for applications to access the network	HTTP, FTP, SMTP, DNS
+6	Presentation	Data	Data translation, encryption, compression	SSL/TLS, JPEG, ASCII
+5	Session	Data	Establish, manage, and terminate sessions	APIs, Sockets, Remote Desktop
+4	Transport	Segment	Reliable delivery of data (error checking)	TCP, UDP
+3	Network	Packet	Routing, logical addressing (IP)	IP, ICMP, Routers
+2	Data Link	Frame	Physical addressing (MAC) and error detection	MAC, Ethernet, Switches
+1	Physical	Bits	Physical transfer of raw data (binary)	Cables, Hubs, NICs, Wi-Fi
+
+
+Detailed Explanation of Each Layer
+----------------------------------
+1️⃣ Physical Layer (Layer 1)
+    Function: Converts raw binary data (0s and 1s) into electrical, radio, or optical signals to transmit data over physical media.
+    Key Devices: Ethernet cables, hubs, repeaters, network interface cards (NICs).
+    Example: Data transmitted over fiber optic or Ethernet cables.
+2️⃣ Data Link Layer (Layer 2)
+    Function: Provides error detection, flow control, and physical (MAC) addressing to ensure reliable data transfer between two connected nodes.
+    Data Unit: Frame
+    Key Protocols: Ethernet, Wi-Fi (802.11), MAC (Media Access Control).
+    Key Devices: Switches, bridges, and network interface cards (NICs).
+    Example: Your Wi-Fi router uses MAC addresses to send data to the correct device on the network.
+3️⃣ Network Layer (Layer 3)
+    Function: Handles logical addressing (IP addresses) and routing of data packets between source and destination devices.
+    Data Unit: Packet
+    Key Protocols: IP (IPv4, IPv6), ICMP, ARP.
+    Key Devices: Routers, Layer 3 switches.
+    Example: A router uses the IP address to route your request for www.google.com to the correct server.
+4️⃣ Transport Layer (Layer 4)
+    Function: Ensures end-to-end data delivery, error detection, and flow control. Uses TCP (Transmission Control Protocol) or UDP (User Datagram Protocol).
+    Data Unit: Segment (for TCP) or Datagram (for UDP)
+    Key Protocols: TCP, UDP.
+    Example: When you stream a video, UDP sends video chunks without checking for errors to ensure speed.
+5️⃣ Session Layer (Layer 5)
+    Function: Manages sessions (connections) between devices. Establishes, maintains, and terminates connections.
+    Key Protocols: APIs, sockets, remote procedure calls (RPCs).
+    Example: When you use a remote desktop application (like TeamViewer), the session layer maintains the connection between your system and the remote system.
+6️⃣ Presentation Layer (Layer 6)
+    Function: Translates data into a format that the application can understand (like encoding, encryption, and compression).
+    Key Protocols: SSL/TLS, ASCII, JPEG, GIF, PNG.
+    Example: When you visit an HTTPS website, the data is encrypted at this layer using SSL/TLS.
+7️⃣ Application Layer (Layer 7)
+    Function: Directly interacts with end-user applications, like web browsers, email, and file transfer software.
+    Key Protocols: HTTP, HTTPS, FTP, SMTP, POP3, DNS.
+    Example: When you enter www.google.com in a web browser, the Application layer uses the HTTP protocol to send the request.
+
+
+What is the Internet?
+    The Internet is a global network of interconnected computers and devices that communicate with each other to share information, data, and services. It allows people to browse websites, send emails, watch videos, and use social media.
+
+    The internet works using a set of rules called protocols (like HTTP, TCP/IP) that ensure smooth communication between different devices regardless of location, device type, or operating system.
+
+    How Does the Internet Work?
+        - The working of the internet can be divided into 6 key steps:
+
+    🔹 1. User Request (Client)
+    When you type a URL (like www.google.com) into your browser, a request is sent from your device (client) to the DNS server (Domain Name System) to find the IP address of the server hosting that website.
+
+    Example: You type www.google.com in a browser.
+
+    🔹 2. DNS (Domain Name System)
+    DNS translates domain names (like www.google.com) into IP addresses (like 172.217.1.174).
+    Since computers understand only IP addresses, DNS acts like a "phonebook" for the internet.
+    Example: DNS converts www.google.com into 172.217.1.174.
+
+    🔹 3. Internet Service Provider (ISP)
+    Your Internet Service Provider (ISP) (like Jio, Airtel, Comcast) connects your device to the wider internet.
+    It provides an IP address to your device and ensures data from your device is transmitted to the correct server.
+    Example: Your ISP assigns you an IP like 192.168.1.10.
+
+    🔹 4. Data Routing
+    Once the DNS identifies the server's IP, your request (like "show the Google homepage") is routed over the internet.
+    This happens through multiple routers and switches (like traffic signals) to reach the web server.
+    Routing is the process of finding the most efficient path from your device to the web server.
+    Example: Your request is sent from your device 📱 → local router → ISP → main internet backbone → server.
+
+    🔹 5. Web Server Response
+    The web server (like Google’s server) receives your request.
+    The server processes it, retrieves the necessary files (like HTML, CSS, images, and JavaScript), and sends them back to your device.
+    Example: Google’s server sends the HTML file for the Google homepage back to your device.
+
+    🔹 6. Display on Your Browser (Client)
+    Your browser receives the data from the server and renders it (converts it into readable text, images, and videos).
+    The HTML, CSS, and JavaScript files are combined to display the final webpage.
+    Example: Your browser displays Google’s homepage with its logo, search bar, and buttons.
+
+
+What is Programming?
+    Programming is the process of creating a set of instructions (code) that a computer can follow to perform specific tasks or solve problems. It involves writing code using a programming language (like Python, C, Java, etc.) to create software, websites, games, applications, and more.
+
+    🔹 Key Concepts of Programming
+        Instructions: Step-by-step directions for the computer.
+        Logic: The flow of decisions and conditions (like "if this, then do that").
+        Syntax: Each programming language has its own set of rules (like grammar in English).
+        Execution: The computer executes (runs) the instructions step-by-step.
+        Error Handling: Debugging errors in the program to make it run smoothly.
+    Example: Imagine you want a robot to make tea. The steps (program) might be:
+    1️⃣ Boil water.
+    2️⃣ Add tea leaves.
+    3️⃣ Add sugar.
+    4️⃣ Pour the tea into a cup.
+
+    This is similar to how programmers give step-by-step instructions to a computer.
+
+
+What is a Program?
+    A program is a set of instructions written by a programmer using a programming language that tells the computer what to do. It takes inputs, processes them, and produces an output.
+
+    🔹 Key Concepts of a Program
+        Input: Data provided to the program. (e.g., typing numbers)
+        Processing: The logic that processes the input. (e.g., calculating the sum of two numbers)
+        Output: The result of the program. (e.g., displaying the sum)
+
+
+Compiler vs Interpreter
+    Both compilers and interpreters are used to convert high-level programming code (such as C, Python, or Java) into machine-readable code that the computer can execute. However, they do so in different ways.
+
+1. Compiler
+    A compiler is a program that translates the entire source code of a program written in a high-level language into machine code (binary) or intermediate code (e.g., bytecode for Java). The entire code is compiled all at once before execution.
+
+    How It Works:
+    The source code (written by the programmer) is taken by the compiler.
+    The compiler translates the entire code into machine code or bytecode.
+    The machine code is saved in a separate file (e.g., .exe file in Windows).
+    This compiled code is then executed by the computer.
+
+
+    Key Characteristics:
+    Translation happens all at once.
+    Faster execution once compiled because the machine code is ready to run.
+    Error detection occurs during the compilation process. The program will not run until all errors are fixed.
+    Machine code generation is platform-specific. A compiled program usually works only on the platform it was compiled for.
+
+    Examples of Compiled Languages:
+    C
+    C++
+    Rust
+    Go
+
+
+2. Interpreter
+    An interpreter translates and executes a program line by line. It reads the source code, interprets it, and executes it immediately without the need for an intermediate machine code file.
+
+    How It Works:
+    The source code (written by the programmer) is provided to the interpreter.
+    The interpreter reads the code line by line and converts each line into machine code (or bytecode) and executes it immediately.
+    The process continues until all lines of code have been interpreted and executed.
+
+    Key Characteristics:
+    Translation happens line by line.
+    Slower execution because each line must be interpreted before execution.
+    Error detection happens during runtime. The program will stop executing as soon as an error is encountered.
+    Cross-platform: Interpreted code can often run on any platform that has the appropriate interpreter installed.
+
+    Examples of Interpreted Languages:
+    Python
+    JavaScript
+    Ruby
+    PHP
