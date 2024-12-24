@@ -1,3 +1,23 @@
+syntax:
+const data_type variable_name = value;
+
 PI = 3.14
 
+const  float PI = 3.14;
+
 WINNING_NUMBER = 56
+
+
+Example : 
+
+#include <stdio.h>
+
+int main() {
+    const int MAX_USERS = 100; // Declare a constant integer
+    // MAX_USERS = 200; //  error: assignment of read-only variable 'MAX_USERS'
+    
+    printf("Max Users: %d\n", MAX_USERS);
+
+    // MAX_USERS = 200; // Error: Cannot modify a constant variable
+    return 0;
+}
