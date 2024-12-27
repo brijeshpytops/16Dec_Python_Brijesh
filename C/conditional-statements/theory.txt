@@ -1,0 +1,9 @@
+In C programming, conditional statements are used to perform different actions based on whether a specified condition evaluates to true or false. They allow the flow of the program to change depending on the conditions at runtime.
+
+
+Types of Conditional Statements in C
+if Statement
+if-else Statement
+Nested if Statement
+else if Ladder
+switch Statement

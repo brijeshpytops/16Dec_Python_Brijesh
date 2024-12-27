@@ -1,6 +1,6 @@
 // Datatypes
 #include<stdio.h>
-
+// global declration
 enum weekday {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY};
 
 
@@ -15,8 +15,8 @@ void main(){
     //printf("Double: %lf\n", pi);
     //printf("Char: %c\n", grade);
 
-     enum weekday day = TUESDAY; // Assign an enumerated value
-    printf("Today is %d\n", day); // Output the numeric value of the enum
+    //enum weekday day = TUESDAY; // Assign an enumerated value
+    //printf("Today is %d\n", day); // Output the numeric value of the enum
 
 
 }

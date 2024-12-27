@@ -16,3 +16,15 @@
 
 // 6. string type: Example technology = "Python"
 
+
+
+// type casting :
+
+// #include <stdio.h>
+
+// void main() {
+//     int a = 3;
+//     float b;
+//     b = (float)a;
+//     printf("%f", b);
+// }
