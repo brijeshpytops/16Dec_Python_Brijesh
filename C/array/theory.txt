@@ -1,0 +1,85 @@
+An array is a collection of elements of the same data type stored in contiguous memory locations. Arrays are used to store multiple values of the same type, which can be accessed using an index[start by default from 0 index].
+
+types of array:
+1] single dim.
+2] two dim
+3] multi dim
+
+
+Types of Arrays in C:
+One-Dimensional Array:
+---------------------
+syntax:
+data_type array_name[size] = {
+    element1, element2,....elementN
+}
+
+- Stores elements in a single row.
+Example: int arr[5];
+
+
+Two-Dimensional Array (Matrix):
+------------------------------
+
+syntax: 
+data_type array_name[row][col] = {
+    {e00, e01, e02},
+    {e10, e11, e12},
+    {e20, e21, e22},
+}
+
+- Stores elements in rows and columns.
+Example: int matrix[3][4];
+
+Multi-Dimensional Array:
+-----------------------
+Stores data in multiple dimensions.
+Example: int cube[3][3][3];
+
+data_type array_name[x][y][z] = {
+    {
+        {e00, e01, e02}
+    },
+    {
+        {e10, e11, e12}
+    },
+    {
+        {e20, e21, e22}
+    },
+}
+
+
+data_type: Type of elements in the array (e.g., int, float, char).
+array_name: Name of the array.
+size: Number of elements the array can hold.
+
+
+Key Features of Arrays in C:
+Fixed Size:
+----------
+The size of an array must be defined at the time of its declaration and cannot be changed during program execution.
+
+Contiguous Memory:
+-----------------
+All elements of the array are stored in contiguous memory locations.
+
+Same Data Type:
+--------------
+All elements in an array must be of the same data type (e.g., int, float, char).
+
+Index-Based Access:
+------------------
+The elements of an array are accessed using indices, starting from 0 for the first element.
+
+
+Advantages of Arrays:
+--------------------
+Easy to manage multiple variables of the same type.
+Sequential access makes processing easier using loops.
+Allows random access of elements using indices.
+
+Limitations:
+-----------
+Fixed size: Cannot change the size after declaration.
+Requires manual bounds checking: Accessing out-of-bounds indices may lead to undefined behavior.
+Memory overhead if array size is larger than needed.
