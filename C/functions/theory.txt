@@ -1,0 +1,112 @@
+A function is a block of code that performs a specific task. It is a reusable unit of code that can be called from different parts of the program to execute the task it defines. Functions help to make programs modular, easier to understand, maintain, and debug.
+
+syntax:
+
+data_type function_name(para1, para2,... ,paran[formal para/args]){ // function defination
+    block of code
+}
+
+function_name(val1, val2,... ,valn[actual para/args]) // function call
+
+Structure of a Function
+-----------------------
+A function in C typically consists of the following components:
+
+- Return Type: Specifies the type of value the function will return. If it doesn't return a value, the return type is void.
+- Function Name: Identifies the function. This is how the function is called in the program.
+- Parameter List: (Optional) Specifies the inputs to the function, enclosed in parentheses.
+- Function Body: Contains the code that defines what the function does.
+
+#include<stdio.h>
+
+void main(){
+    int a = 10, b = 20;
+    int c = a + b;
+    printf("%d", c);
+    
+    int d = 30, e = 40;
+    int f = d + e;
+    printf("%d", f);
+
+    100 times -> 300
+}
+
+
+# Example - 1
+
+#include <stdio.h>
+
+void main() {
+    int addition(int a, int b){
+        int c = a + b;
+        printf("%d\n", c);
+    }
+    
+    int start = 1, end = 100;
+    while(start <= end){
+        int num1, num2;
+        printf("Enter a num1 & num2: ");
+        scanf("%d %d", &num1, &num2);
+        addition(num1, num2);
+        start++;
+    } 
+}
+
+1] without return type without parameters
+#include <stdio.h>
+
+void main() {
+    void addition(){
+        int a = 10, b = 20;
+        int c = a + b;
+        printf("%d",c);
+    }
+    addition();
+}
+
+2] with return type without parameters
+#include <stdio.h>
+
+void main() {
+    int addition(){
+        int a = 10, b = 20;
+        int c = a + b;
+        return c;
+    }
+    
+    printf("%d",addition());
+}
+
+3] without return type with parameters
+#include <stdio.h>
+
+void main() {
+    void addition(int a, int b){
+        int c = a + b;
+        printf("%d",c);
+    }
+    addition(10, 20);
+    
+}
+
+4] with return type with parameters
+
+#include <stdio.h>
+
+void main() {
+    int addition(int a, int b){
+        int c = a + b;
+        return c;
+    }
+    
+    int res = addition(10, 20);
+    
+    printf("%d", res + 30);
+
+}
+
+
+1 + 2 + 3 + 4 + 5 + ... + n
+(1 + 2) + (2 + 3) + ... + (n, n+1) 
+(1 + 2) * (2 + 3) * ... * (n, n+1) 
+0 1 1 2 3 5 8 ......
