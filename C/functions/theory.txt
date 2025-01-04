@@ -106,7 +106,87 @@ void main() {
 }
 
 
-1 + 2 + 3 + 4 + 5 + ... + n
-(1 + 2) + (2 + 3) + ... + (n, n+1) 
-(1 + 2) * (2 + 3) * ... * (n, n+1) 
+// 1 + 2+ 3+ 4+ 5+ .. + n
+#include <stdio.h>
+
+int sqRec(int num){
+    if (num == 1){
+        return 1;
+    }else{
+        return num + sqRec(num - 1);
+    }
+};
+
+int main()
+{
+    printf("%d", sqRec(5));
+
+    return 0;
+}
+
+
+(1 + 2) + (2 + 3) + ... + (n + n+1) 
+// (1 + 2) + (2 + 3) + ... + (n + n+1) 
+#include <stdio.h>
+
+int sqRec(int num){
+    if (num == 1){
+        return(num + (num + 1));
+    }else{
+        return (num + (num + 1)) + sqRec(num - 1);
+    }
+};
+
+int main()
+{
+    printf("%d", sqRec(5));
+
+    return 0;
+}
+
+
+// (1 + 2) * (2 + 3) * ... * (n + n+1) 
+#include <stdio.h>
+
+int sqRec(int num){
+    if (num == 1){
+        return(num + (num + 1));
+    }else{
+        return (num + (num + 1)) * sqRec(num - 1);
+    }
+};
+
+int main()
+{
+    printf("%d", sqRec(5));
+
+    return 0;
+}
+
 0 1 1 2 3 5 8 ......
+
+#include <stdio.h>
+
+void fiboo(int num){
+    int n1 = 0;
+    int n2 = 1;
+    
+    for(int start = 1; start <=num; start++){
+        if (start == 1){
+            printf("%d ", n1);
+        }else if(start == 2){
+            printf("%d ", n2);
+        }else {
+            int nth = n1 + n2;
+            n1 = n2;
+            n2 = nth;
+            printf("%d ", nth);
+        }
+    }
+}
+int main()
+{
+    int num = 7;
+    fiboo(num);
+    return 0;
+}
