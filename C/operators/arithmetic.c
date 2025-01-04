@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 void  main() {
-    int num1 = 10;
+    int num1 = 10; // initialization
     int num2 = 20;
-    int res;
+    int res; // declaration
     
     res = num1 + num2;
     printf("Add: %d\n", res);
