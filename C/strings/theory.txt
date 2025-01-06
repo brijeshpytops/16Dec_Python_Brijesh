@@ -1,0 +1,173 @@
+A string is essentially a sequence of characters terminated by a null character ('\0'). Strings in C are represented as an array of char data type.
+
+
+Key Points about Strings in C:
+
+Null-Termination:
+----------------
+The last character in a C string is always the null character ('\0'), which indicates the end of the string.
+
+Declaration:
+-----------
+Strings are declared as a character array:
+
+char fullname[100];
+
+Strings can also be initialized:
+
+char fullname[100] = "brijesh";
+
+Input and Output:
+
+Use scanf to read a string (stops at whitespace):
+
+Example-1:
+
+#include <stdio.h>
+
+void main()
+{
+   char company_name[] = "tops";
+   printf("%s\n", company_name);
+   printf("%d", sizeof(company_name)); // 5 because of '\0'
+}
+
+
+Example-2:
+
+#include <stdio.h>
+
+void main()
+{
+   char company_name[100] = "tops tech";
+   printf("%s\n", company_name);
+   printf("%d", sizeof(company_name)); // 5 because of '\0'
+}
+
+
+Example-3:
+
+#include <stdio.h>
+
+void main()
+{
+   char company_name[100];
+   printf("Enter a string: ");
+   scanf("%s", &company_name);
+   printf("%s\n", company_name);
+   printf("%d", sizeof(company_name)); // 5 because of '\0'
+}
+
+
+Use gets or fgets to read a line (includes spaces, but gets is unsafe):
+
+Example-4:
+
+#include <stdio.h>
+#include <string.h>
+void main()
+{
+   char company_name[100];
+   printf("Enter a string: ");
+   fgets(company_name, 100, stdin);
+   printf("%s\n", company_name);
+   printf("%d", sizeof(company_name)); // 5 because of '\0'
+}
+
+
+String Library Functions: 
+------------------------
+The <string.h> library provides various functions for string manipulation:
+
+strlen(str) - Returns the length of the string (excluding '\0').
+strcpy(dest, src) - Copies src to dest.
+strcat(dest, src) - Concatenates src to the end of dest.
+strcmp(str1, str2) - Compares two strings.
+
+your OTP is : 353457
+firstname + " " + lastname
+string copy
+string find
+string case convert 
+- TOpS tEChnoLogy
+tops technology
+TOPS TECHNOLOGY
+Tops Technology
+Tops technology
+
+
+Example-1:
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+   char company_name[100];
+   printf("Enter a string: ");
+//   scanf("%s", &company_name);
+    fgets(company_name, 100, stdin);
+   printf("string length: %d\n", strlen(company_name) );
+    
+}
+
+
+Example-2:
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+   char fname[100] = "brijesh";
+   char space[] = " ";
+   char lname[] = "gondaliya";
+   strcat(fname, space);
+   strcat(fname, lname);
+   printf("%s", fname);
+}
+
+
+Example-3:
+#include <stdio.h>
+#include <string.h>
+
+void main()
+{
+   char str1[100] = "xyz";
+   char str2[100];
+   strcpy(str2, str1);
+   printf("%s", str2);
+}
+
+
+Example-4:
+#include <stdio.h>
+#include <string.h>
+
+void Uppercase(char str1[]){
+    for (int start = 0; start<strlen(str1); start++){
+       if (str1[start] >= 'a' && str1[start] <= 'z'){
+            printf("%c", str1[start] - 32);
+       }else{
+           printf("%c", str1[start]);
+       }
+   }
+}
+
+void main()
+{
+    int num;
+    
+    printf("Press 1: convert string into uppercase\n");
+    printf("Press 2: convert string into lowercase\n");
+    printf("Press 3: convert string into titlecase\n");
+    printf("Press 4: convert string into capitalize\n");
+    printf("Press a number: ");
+    scanf("%d", &num);
+    switch(num){
+        case 1:
+            Uppercase("TOpS tEChnoLogy");
+            break;
+        default:
+            printf("Invalid number for case converter\n");
+    }
+}
