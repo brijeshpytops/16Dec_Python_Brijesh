@@ -1,0 +1,225 @@
+A pointer is a variable that stores the memory address of another variable. Pointers are powerful and are used for efficient memory management, dynamic memory allocation, and working with data structures like arrays, linked lists, and trees.
+
+Declaration:
+-----------
+A pointer is declared using the * symbol.
+int *ptr;  // Declares a pointer to an integer
+
+
+Initialization:
+--------------
+A pointer is initialized with the address of a variable using the & operator.
+
+int a = 10;
+int *ptr = &a;  // ptr now holds the address of 'a'
+
+
+Dereferencing:
+-------------
+The * operator is used to access the value stored at the memory address held by the pointer.
+printf("%d", *ptr);  // Prints the value of 'a' (10)
+
+
+NULL Pointer:
+------------
+A pointer that does not point to any valid memory address is called a NULL pointer.
+int *ptr = NULL;  // Points to nothing
+
+Void Pointer:
+------------
+A generic pointer that can point to any data type but cannot be dereferenced directly.
+void *ptr;
+int a = 10;
+ptr = &a;  // ptr now points to 'a'
+
+
+Pointer Arithmetic:
+------------------
+Pointers can be incremented or decremented to navigate through memory addresses.
+int arr[] = {1, 2, 3};
+int *ptr = arr;
+printf("%d", *(ptr + 1));  // Accesses the second element (2)
+
+#include <stdio.h>
+
+int main() {
+   int num1 = 10;
+    int *num2;
+    num2 = &num1;
+    int  **num3;
+    num3 = &num2;
+    
+    
+    // printf("%x\n", &num1);
+    printf("%d", **num3);
+    printf("%x", **num3);
+    
+    return 0;
+}
+
+
+Example:
+#include <stdio.h>
+
+int main() {
+    int a = 20;
+    int *p = &a;
+
+    printf("Address of a: %p\n", &a);
+    printf("Address stored in p: %p\n", p);
+    printf("Value of a using p: %d\n", *p);
+
+    return 0;
+}
+
+
+Example:
+#include <stdio.h>
+
+int add(int *a, int *b){
+    return *a + *b;
+}
+
+int main() {
+    // printf("%d", add(10, 20));
+    int num1 = 10, num2 = 20;
+    printf("%d", add(&num1, &num2));
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num = 5;
+    int *ptr;
+    
+    ptr = (int*)malloc(num * sizeof(int));
+    
+    if(ptr == NULL){
+        printf("Memory not allocated yet.");
+        exit(0);
+    }else{
+        printf("Memory allocated\n");
+        
+        for(int start = 0; start < num; start++){
+            int new_num;
+            printf("Enter a number-%d: ", start);
+            scanf("%d", &new_num);
+            ptr[start] = new_num;
+        }
+        
+        for(int start = 0; start < num; start++){
+            printf("%d\n",  ptr[start]);
+        }
+    }
+    
+    return 0;
+}
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int num = 5;
+    int *ptr;
+    
+    ptr = (int*)calloc(num, sizeof(int));
+    
+    if(ptr == NULL){
+        printf("Memory not allocated yet.");
+        exit(0);
+    }else{
+        printf("Memory allocated\n");
+        
+        for(int start = 0; start < num; start++){
+            int new_num;
+            printf("Enter a number-%d: ", start);
+            scanf("%d", &new_num);
+            ptr[start] = new_num;
+        }
+        
+        for(int start = 0; start < num; start++){
+            printf("%d\n",  ptr[start]);
+        }
+    }
+    
+    return 0;
+}
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+
+    // This pointer will hold the
+    // base address of the block created
+    int* ptr;
+    int n, i;
+
+    // Get the number of elements for the array
+    n = 5;
+    printf("Enter number of elements: %d\n", n);
+
+    // Dynamically allocate memory using calloc()
+    ptr = (int*)calloc(n, sizeof(int));
+
+    // Check if the memory has been successfully
+    // allocated by malloc or not
+    if (ptr == NULL) {
+        printf("Memory not allocated.\n");
+        exit(0);
+    }
+    else {
+
+        // Memory has been successfully allocated
+        printf("Memory successfully allocated using calloc.\n");
+
+        // Get the elements of the array
+        for (i = 0; i < n; ++i) {
+            ptr[i] = i + 1;
+        }
+
+        // Print the elements of the array
+        printf("The elements of the array are: ");
+        for (i = 0; i < n; ++i) {
+            printf("%d, ", ptr[i]);
+        }
+
+        // Get the new size for the array
+        n = 10;
+        printf("\n\nEnter the new size of the array: %d\n", n);
+
+        // Dynamically re-allocate memory using realloc()
+        ptr = (int*)realloc(ptr, n * sizeof(int));
+      
+          if (ptr == NULL) {
+          printf("Reallocation Failed\n");
+          exit(0);
+        }
+
+        // Memory has been successfully allocated
+        printf("Memory successfully re-allocated using realloc.\n");
+
+        // Get the new elements of the array
+        for (i = 5; i < n; ++i) {
+            ptr[i] = i + 1;
+        }
+
+        // Print the elements of the array
+        printf("The elements of the array are: ");
+        for (i = 0; i < n; ++i) {
+            printf("%d, ", ptr[i]);
+        }
+
+        free(ptr);
+    }
+
+    return 0;
+}
