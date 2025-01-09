@@ -1,0 +1,88 @@
+create a new file:
+
+#include <stdio.h>
+
+void main(){
+    FILE *f;
+
+    f = fopen("sample.txt", "w");
+
+    if (f == NULL){
+        printf("Unable to create a new file");
+    }
+
+    fclose(f);
+}
+
+
+Writing data into the file:
+
+#include <stdio.h>
+
+void main(){
+    FILE *f;
+    char data[100];
+
+    f = fopen("sample.txt", "w");
+
+    if (f == NULL){
+        printf("file is opened.");
+    }
+
+    printf("Enter a something...");
+    fgets(data, sizeof(data), stdin);
+
+    fprintf(f, "%s", data);
+
+    printf("Data written to the file successfully.\n");
+
+
+    fclose(f);
+}
+
+Reading data from the file;
+
+#include <stdio.h>
+
+void main(){
+    FILE *f;
+    char data[100];
+
+    f = fopen("sample.txt", "r");
+
+    if (f == NULL){
+        printf("file is opened.");
+    }
+
+    fgets(data, sizeof(data), f);
+
+    printf("Data: %s", data);
+
+
+    fclose(f);
+}
+
+
+
+#include <stdio.h>
+
+void main(){
+    char filename[] = "sample.txt";
+    int res = remove(filename);
+    if (res == 0){
+        printf("File is deleted successfully.");
+    }
+}
+
+
+#include <stdio.h>
+
+void main(){
+    char old_filename[] = "sample.txt";
+    char new_filename[]= "tops.txt";
+
+    int res = rename(old_filename, new_filename);
+    if (res == 0){
+        printf("File renamed successfully.");
+    }
+}

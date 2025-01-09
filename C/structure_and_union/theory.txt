@@ -1,0 +1,131 @@
+Both structures and unions are user-defined data types in C used to group multiple related variables of different data types under one name. However, they have significant differences in memory usage and behavior.
+
+Structure (struct):
+-------------------
+A structure is a collection of variables (also called members) of different data types grouped together under one name. Each member has its own memory allocation.
+
+syntax:
+
+struct StructureName {
+    dataType member1;
+    dataType member2;
+    // More members...
+};
+
+
+Example: 
+
+#include <stdio.h>
+#include <string.h>
+
+struct book{
+    char name[100]; 
+    int pages;
+    float price;
+};
+
+
+int main() {
+    struct book b1, b2;
+    
+    strcpy(b1.name, "python");
+    b1.pages = 400;
+    b1.price = 145.0;
+    
+    printf("book name is: %s\n", b1.name);
+    printf("book total pages: %d\n", b1.pages);
+    printf("book price is: %.2f\n\n", b1.price);
+    
+    strcpy(b2.name, "java");
+    b2.pages = 500;
+    b2.price = 245.0;
+    
+    printf("book name is: %s\n", b2.name);
+    printf("book total pages: %d\n", b2.pages);
+    printf("book price is: %.2f\n", b2.price);
+    
+    
+
+    return 0;
+}
+
+Example-2:
+
+#include <stdio.h>
+#include <string.h>
+
+struct book{
+    char name[100]; 
+    int pages;
+    float price;
+};
+
+
+int main() {
+    
+    while(1){
+        struct book b1;
+        int p;
+        printf("Enter a pages: ");
+        scanf("%d", &p);
+        strcpy(b1.name, "python");
+        b1.pages = p;
+        b1.price = 145.0;
+        
+        printf("book name is: %s\n", b1.name);
+        printf("book total pages: %d\n", b1.pages);
+        printf("book price is: %.2f\n\n", b1.price);
+    }
+    return 0;
+}
+
+
+Union (union)
+-------------
+A union is similar to a structure but with a key difference: all members share the same memory location. The size of a union is equal to the size of its largest member.
+
+Syntax:
+
+union UnionName {
+    dataType member1;
+    dataType member2;
+    // More members...
+};
+
+
+Example: 
+
+
+#include <stdio.h>
+#include <string.h>
+
+union book{
+    char name[100]; 
+    int pages;
+    float price;
+};
+
+
+int main() {
+    union book b1, b2;
+    
+    strcpy(b1.name, "python");
+    b1.pages = 400;
+    b1.price = 145.0;
+    
+    printf("book name is: %s\n", b1.name);
+    printf("book total pages: %d\n", b1.pages);
+    printf("book price is: %.2f\n\n", b1.price);
+    
+    strcpy(b2.name, "java");
+    b2.pages = 500;
+    b2.price = 245.0;
+    
+    printf("book name is: %s\n", b2.name);
+    printf("book total pages: %d\n", b2.pages);
+    printf("book price is: %.2f\n", b2.price);
+    
+    
+
+    return 0;
+}
