@@ -1,0 +1,25 @@
+// docs section
+#include <iostream> // linking section
+using namespace std;
+int add(); // defination section
+
+const float PI = 3.14; // global decaration
+
+int add(){ // function declaration
+    return 10 + 20;
+}
+
+int main() {
+    
+    int num;
+    
+    cout<<"Enter a number: ";
+    cin>>num;
+    
+    cout<<num;
+    
+    // cout<<PI<<endl;
+    // cout<<add();
+    
+    return 0;
+}
