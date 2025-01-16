@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int winning_number = 45, guessing_number, counter = 0;
+    int flag = 1;
+    while(flag){
+        cout<<"Enter a guess number[0-100]: ";
+        cin>>guessing_number;
+        counter++;
+        
+        // cout<<guessing_number;
+        if(guessing_number == winning_number){
+            cout<<"Congrets, You are win!!!"<<endl<<"You guessed after "<<counter<<" time attempts"<<endl;
+            int new_flag;
+            cout<<endl<<"You want to play again? "<<endl<<"Press 1: for yes"<<endl<<"Press 0: for no"<<endl<<"Number: ";
+            cin>>new_flag;
+            if (new_flag <= 0 || new_flag >= 1){
+                if (new_flag == 1){
+                    flag = new_flag;
+                    counter = 0;
+                }else{
+                    exit(0);
+                }
+            }
+        }else{
+            if(guessing_number < winning_number){
+                cout<<"Too low"<<endl;
+            }else{
+                cout<<"Too high"<<endl;
+            }
+        }
+    }
+  
+
+    return 0;
+}
