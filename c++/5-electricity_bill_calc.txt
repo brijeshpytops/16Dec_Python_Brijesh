@@ -1,0 +1,33 @@
+// electicity bill calculation
+#include <iostream>
+using namespace std;
+
+void ElectricityBill(int consumed_units, int charge){
+    cout<<"Total bill: ₹"<<consumed_units * charge<<"/-";
+}
+
+int main() {
+    int consumed_units;
+    
+    cout<<"Enter consumed units: ";
+    cin>>consumed_units;
+    
+    // cout<<consumed_units;
+    
+    if (consumed_units >= 0){
+        if (consumed_units >= 0 && consumed_units <= 100){
+            ElectricityBill(consumed_units, 5);
+        } else if (consumed_units >= 101 && consumed_units <= 200){
+            ElectricityBill(consumed_units, 6);
+        } else if (consumed_units >= 201 && consumed_units <= 300){
+            ElectricityBill(consumed_units, 7);
+        } else {
+            ElectricityBill(consumed_units, 8);
+        }
+    }else {
+        cout<<"Consumed unit can not be negative";
+    }
+    
+    
+    return 0;
+}

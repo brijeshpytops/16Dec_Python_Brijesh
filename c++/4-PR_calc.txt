@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    int total_subject = 0;
+    
+    cout<<"Enter a total subject: ";
+    cin>>total_subject;
+    
+    // cout<<total_subject;
+    float subjects[total_subject * sizeof(float)];
+    
+    for(int start = 1; start <= total_subject; start+=1){
+        cout<<"Enter mark of subject-"<<start<<": ";
+        cin>>subjects[start-1];
+    }
+    int obtained_marks = 0;
+    for(int start = 1; start <= total_subject; start+=1){
+       obtained_marks += subjects[start-1];
+    }
+    
+    int percentage = (obtained_marks * 100)/(total_subject * 100);
+    
+    cout<<"PR:"<<percentage;
+
+
+    return 0;
+}
