@@ -1,0 +1,13 @@
+1] class and object
+2] Encapsulation
+    - access speicifers
+    - constructor
+    - getter-setter method
+3] inhritance
+    - types of inhritance
+4] polymorphism
+    - method overloading | compile-time poly[static binding].
+    - method overriding | run-time poly[dynamic binding].
+5] virtual function
+6] friend function
+7] inline function
