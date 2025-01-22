@@ -2,6 +2,9 @@
 2] Encapsulation
     - access speicifers
     - constructor
+        - default constructor
+        - parameterizes cons.
+        - copy constructor
     - getter-setter method
 3] inhritance
     - types of inhritance

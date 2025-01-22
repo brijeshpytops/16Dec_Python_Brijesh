@@ -1,0 +1,186 @@
+# --------------- Single inh.------------------------------
+#include <iostream>
+using namespace std;
+
+class A{
+  public:
+  void a(){
+      cout<<"I am from class A"<<endl;
+  }
+};
+
+class B: public A{
+  public:
+  void b(){
+      cout<<"I am from class B"<<endl;
+  }
+};
+
+
+int main() {
+    
+    B obj;
+    obj.a();
+    obj.b();
+  
+    return 0;
+}
+
+# --------------- Multilevel inh.------------------------------
+
+#include <iostream>
+using namespace std;
+
+class A{
+  public:
+  void a(){
+      cout<<"I am from class A"<<endl;
+  }
+};
+
+class B: public A{
+  public:
+  void b(){
+      cout<<"I am from class B"<<endl;
+  }
+};
+
+class C: public B{
+  public:
+  void c(){
+      cout<<"I am from class C"<<endl;
+  }
+};
+
+
+int main() {
+    
+    C obj;
+    obj.a();
+    obj.b();
+    obj.c();
+  
+    return 0;
+}
+
+# --------------- Multiple inh.------------------------------
+
+#include <iostream>
+using namespace std;
+
+class A{
+  public:
+  void a(){
+      cout<<"I am from class A"<<endl;
+  }
+};
+
+class B{
+  public:
+  void b(){
+      cout<<"I am from class B"<<endl;
+  }
+};
+
+class C: public A, public B{
+  public:
+  void c(){
+      cout<<"I am from class C"<<endl;
+  }
+};
+
+
+int main() {
+    
+    C obj;
+    obj.a();
+    obj.b();
+    obj.c();
+  
+    return 0;
+}
+
+# --------------- Heiarchical inh.------------------------------
+
+
+#include <iostream>
+using namespace std;
+
+class Shape{
+    public:
+    void shape(){
+        cout<<"Shape"<<endl;
+    }  
+};
+
+class Shape2d:public Shape{
+    public:
+    void shape2d(){
+        cout<<"Shape2d"<<endl;
+    }  
+};
+
+class Circle:public Shape2d{
+    public:
+    void circle(){
+        cout<<"Circle"<<endl;
+    }  
+};
+
+class Ract:public Shape2d{
+    public:
+    void rect(){
+        cout<<"Ract"<<endl;
+    }  
+};
+
+class Shape3d:public Shape{
+    public:
+    void shape3d(){
+        cout<<"Shape3d"<<endl;
+    }  
+};
+
+class Cube:public Shape3d{
+    public:
+    void cube(){
+        cout<<"Cube"<<endl;
+    }  
+};
+
+int main() {
+    
+    Circle c1;
+    c1.circle();
+    c1.shape2d();
+    c1.shape();
+  
+  
+    return 0;
+}
+
+# -------------------------Access protected data in child class---------------
+#include <iostream>
+using namespace std;
+
+class A{
+    protected:
+    int private_num = 10;
+};
+
+class B: public A{
+    public:
+    void use_parent_private_date(){
+        cout<<private_num;
+    }
+};
+
+
+int main() {
+    
+    B obj;
+    obj.use_parent_private_date();
+  
+  
+    return 0;
+}
