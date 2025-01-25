@@ -1,0 +1,125 @@
+# Example - 1:
+
+#include <iostream>
+using namespace std;
+
+class Math{
+    public:
+    
+    int add(int a, int b){
+        return a + b;
+    }
+    
+    int add(int a, int b, int c){
+        return a + b + c;
+    }
+};
+
+int main() {
+    
+    Math m1;
+    
+    cout<<m1.add(10, 20, 30);
+   
+
+    return 0;
+}
+
+
+# Example - 2:
+
+#include <iostream>
+using namespace std;
+
+class Printer {
+public:
+    void print(int i) {
+        cout << "Printing integer: " << i << endl;
+    }
+    
+    void print(double d) {
+        cout << "Printing double: " << d << endl;
+    }
+    
+    void print(string s) {
+        cout << "Printing string: " << s << endl;
+    }
+};
+
+int main() {
+    Printer printer;
+    printer.print(5);        // Output: Printing integer: 5
+    printer.print(3.14);     // Output: Printing double: 3.14
+    printer.print("Hello!"); // Output: Printing string: Hello!
+    
+    return 0;
+}
+
+
+# Operator overloading
+
+#include <iostream>
+using namespace std;
+
+class ComplexNum{
+    double real;
+    double img;
+    
+    public:
+    ComplexNum(double r, double i){
+        real = r;
+        img = i;
+    };
+    
+    ComplexNum operator + (const ComplexNum& new_num){
+        return ComplexNum(real + new_num.real, img + new_num.img);
+    }
+    
+    void display(){
+        cout<<real<< " + "<<img<<"J";
+    }
+    
+};
+
+int main() {
+    
+    ComplexNum c1(10, 20);
+    ComplexNum c2(10, 20);
+    ComplexNum c3 = c1 + c2;
+    c3.display();
+   
+
+    return 0;
+}
+
+
+# method overriding
+
+#include <iostream>
+using namespace std;
+
+class Parent{
+    public:
+    virtual void info(){
+        cout<<"This is a parent class method.";
+    };
+};
+
+class Child: public Parent{
+    public:
+    void info(){
+        cout<<"This is a child class method.";
+    };
+};
+
+int main() {
+    
+    Parent* p1;
+    Child c1;
+    
+    p1=&c1;
+    
+    p1->info();
+    
+    return 0;
+}

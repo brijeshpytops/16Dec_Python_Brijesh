@@ -1,0 +1,68 @@
+Templates in C++ are a powerful feature that allows writing generic and reusable code. Using templates, you can define a single function, class, or structure to operate with different data types without rewriting the code.
+
+Types of Templates
+Function Templates:
+
+Define a template for a function that works with multiple data types.
+Class Templates:
+
+Define a template for a class that works with multiple data types.
+
+
+1. Function Templates
+A function template allows you to write a single function definition that works with different data types.
+
+template <typename T>
+return_type function_name(T parameter) {
+    // Function body
+}
+
+
+#include <iostream>
+using namespace std;
+
+template <typename T>
+T add(T a, T b) {
+    return a + b;
+}
+
+int main() {
+    cout << "Addition of integers: " << add(5, 10) << endl;
+    cout << "Addition of doubles: " << add(3.5, 2.7) << endl;
+    cout << "Addition of char: " << add('a', 'b') << endl;
+    return 0;
+}
+
+
+2. Class Templates
+Class templates allow you to create generic classes that can operate on different data types.
+
+template <typename T>
+class ClassName {
+    T member;
+public:
+    ClassName(T val) : member(val) {}
+    T getMember() { return member; }
+};
+
+
+#include <iostream>
+using namespace std;
+
+template <typename T>
+class Box {
+    T value;
+public:
+    Box(T val) : value(val) {}
+    T getValue() { return value; }
+};
+
+int main() {
+    Box<int> intBox(10);
+    Box<double> doubleBox(5.5);
+
+    cout << "Integer Box: " << intBox.getValue() << endl;
+    cout << "Double Box: " << doubleBox.getValue() << endl;
+
+    return 0;
+}

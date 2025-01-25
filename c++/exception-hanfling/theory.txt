@@ -1,0 +1,75 @@
+Exception handling in C++ provides a mechanism to handle runtime errors in a controlled way, allowing the program to recover or terminate gracefully. It is implemented using try, catch, and throw keywords.
+
+Key Concepts of Exception Handling
+try Block:
+
+Encapsulates the code that might throw an exception.
+If an exception occurs, control jumps to the catch block.
+
+catch Block:
+
+Handles the exception.
+Specifies the type of exception it can handle.
+
+throw Statement:
+
+Used to signal an exception.
+Can throw standard exceptions, user-defined exceptions, or any other data type.
+
+syntax:
+
+try {
+    // Code that may throw an exception
+    throw exception_type;
+} catch (exception_type e) {
+    // Code to handle the exception
+}
+
+
+# Example - 1:
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int num1 = 10, num2 = 0;
+    
+    try{
+        if (num2 != 0){
+            int res = num1 / num2;
+            cout<<res;
+        }else{
+            throw "can't divide by zero";
+        }
+    }catch(const char* error){
+         cout << "Exception caught: " << error << endl;
+    }
+   
+
+    return 0;
+}
+
+# Example - 2:
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int bal = 10000, wb = 15000;
+    
+    try{
+        if (wb <= bal){
+            int res = bal - wb;
+            cout<<res;
+        }else{
+            throw "Insufficent balance";
+        }
+    }catch(const char* error){
+         cout << "Exception caught: " << error << endl;
+    }
+   
+
+    return 0;
+}

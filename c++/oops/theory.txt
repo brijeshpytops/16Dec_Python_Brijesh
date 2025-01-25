@@ -10,6 +10,8 @@
     - types of inhritance
 4] polymorphism
     - method overloading | compile-time poly[static binding].
+        - function overloading
+        - operator overloading
     - method overriding | run-time poly[dynamic binding].
 5] virtual function
 6] friend function

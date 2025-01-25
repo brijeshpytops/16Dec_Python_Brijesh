@@ -1,0 +1,89 @@
+File handling in C++ allows you to create, read, write, and manipulate files on the disk. The <fstream> library in C++ provides classes and methods for file handling. The primary classes used for file handling are:
+
+ofstream: Used for writing data to a file (output file stream).
+ifstream: Used for reading data from a file (input file stream).
+fstream: Used for both reading and writing data to a file (file stream).
+
+
+
+File handling in C++ allows you to create, read, write, and manipulate files on the disk. The <fstream> library in C++ provides classes and methods for file handling. The primary classes used for file handling are:
+
+ofstream: Used for writing data to a file (output file stream).
+ifstream: Used for reading data from a file (input file stream).
+fstream: Used for both reading and writing data to a file (file stream).
+Common Steps in File Handling
+Include <fstream> Header: Include the header file to use file handling classes.
+
+Create Stream Objects: Create an object of ofstream, ifstream, or fstream depending on the operation.
+
+Open a File: Use the .open() method or constructor to specify the file to work with.
+
+Perform Operations: Perform read/write operations using stream objects.
+
+Close the File: Use the .close() method to close the file and free resources.
+
+# write data into the File
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    ofstream outFile("example.txt"); // Create and open the file
+    if (outFile.is_open()) {
+        outFile << "Hello, File Handling in C++!\n";
+        outFile << "This is an example of writing to a file.\n";
+        outFile.close(); // Close the file
+        cout << "Data written to the file successfully." << endl;
+    } else {
+        cout << "Unable to open the file." << endl;
+    }
+    return 0;
+}
+
+# read data from the file
+
+#include <iostream>
+#include <fstream>
+#include <string>
+using namespace std;
+
+int main() {
+    ifstream inFile("example.txt"); // Open the file for reading
+    if (inFile.is_open()) {
+        string line;
+        while (getline(inFile, line)) { // Read line by line
+            cout << line << endl;
+        }
+        inFile.close(); // Close the file
+    } else {
+        cout << "Unable to open the file." << endl;
+    }
+    return 0;
+}
+
+# read and right data at onec from the file
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+    fstream file("example.txt", ios::in | ios::out | ios::app); // Open in read/write/append mode
+    if (file.is_open()) {
+        // Append some data
+        file << "Appending new data to the file.\n";
+
+        // Move the file pointer to the beginning
+        file.seekg(0, ios::beg);
+
+        // Read the entire file
+        string line;
+        while (getline(file, line)) {
+            cout << line << endl;
+        }
+        file.close();
+    } else {
+        cout << "Unable to open the file." << endl;
+    }
+    return 0;
+}
