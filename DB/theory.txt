@@ -1,0 +1,19 @@
+Database
+	- Tables
+		- row [records]
+		- columns [fields]
+
+Relational - Mysql, Sqlite3, PostgresSQL, oracal
+Employee
+Firstname | Lastname | Email | Password
+
+Non-relational - MongoDB, Radis
+Employee
+firstname
+lastname
+email
+	[- example1@gmail.com
+	- example2@gmail.com]
+password
+
+
