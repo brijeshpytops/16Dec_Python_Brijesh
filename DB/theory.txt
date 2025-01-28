@@ -17,3 +17,27 @@ email
 password
 
 
+SQL (Structured Query Language) is a standard programming language specifically designed for managing and manipulating relational databases. SQL is used for tasks like querying data, updating records, creating and modifying database structures, and managing access to data.
+
+Key Features of SQL:
+Data Definition: SQL allows you to define the structure of the database, including creating, altering, and deleting tables and other database objects. This is done through Data Definition 
+Language (DDL) commands such as:
+
+CREATE: To create new tables, views, indexes, etc.
+ALTER: To modify an existing database object like a table.
+DROP: To delete a table or other database objects.
+
+Data Manipulation: SQL enables you to insert, update, and delete data in tables using Data Manipulation Language (DML) commands like:
+
+SELECT: To query or retrieve data from the database.
+INSERT: To add new records into a table.
+UPDATE: To modify existing records in a table.
+DELETE: To remove records from a table.
+
+Data Querying: SQL is widely known for its ability to query relational databases. The SELECT statement is used to fetch data from one or more tables and return the results to the user.
+
+Transactions: SQL supports transaction management, which allows multiple queries to be executed in a single batch. Transactions are handled using:
+
+BEGIN: Start a transaction.
+COMMIT: Save the changes made in a transaction.
+ROLLBACK: Undo the changes if there is an error.
