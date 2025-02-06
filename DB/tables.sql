@@ -35,11 +35,11 @@ CREATE TABLE employees (
 -- Create table
 
 mysql> create table users(
-    -> user_id int primary key auto_increment,
-    -> fullname varchar(255) not null,
-    -> email varchar(255) not null unique,
-    -> mobile varchar(255) not null unique,
-    -> password varchar(255) not null);
+    user_id int primary key auto_increment,
+    fullname varchar(255) not null,
+    email varchar(255) not null unique,
+    mobile varchar(255) not null unique,
+    password varchar(255) not null);
 
 -- show tables:
 

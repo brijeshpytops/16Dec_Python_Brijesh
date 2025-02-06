@@ -15,17 +15,17 @@ Query OK, 3 rows affected (0.01 sec)
 Records: 3  Duplicates: 0  Warnings: 0
 
 mysql> INSERT INTO users (email, mobile, password) VALUES
-    -> ("rohit@gmail.com", "9876543210", "rohit123"),
-    -> ("anita@yahoo.com", "9123456789", "anita@pass"),
-    -> ("manoj@gmail.com", "9234567890", "manoj@2024"),
-    -> ("ravi@hotmail.com", "9345678901", "ravi!pass"),
-    -> ("priya@outlook.com", "9456789012", "priya#pass"),
-    -> ("suresh@gmail.com", "9567890123", "suresh@789"),
-    -> ("kavita@yahoo.com", "9678901234", "kavita@pass"),
-    -> ("ajay@rediffmail.com", "9789012345", "ajay_rock"),
-    -> ("meena@gmail.com", "9890123456", "meena@me"),
-    -> ("alok@hotmail.com", "9901234567", "alok_007"),
-    -> ("deepak@gmail.com", "9012345678", "deepak@xyz");
+    ("rohit@gmail.com", "9876543210", "rohit123"),
+    ("anita@yahoo.com", "9123456789", "anita@pass"),
+    ("manoj@gmail.com", "9234567890", "manoj@2024"),
+    ("ravi@hotmail.com", "9345678901", "ravi!pass"),
+    ("priya@outlook.com", "9456789012", "priya#pass"),
+    ("suresh@gmail.com", "9567890123", "suresh@789"),
+    ("kavita@yahoo.com", "9678901234", "kavita@pass"),
+    ("ajay@rediffmail.com", "9789012345", "ajay_rock"),
+    ("meena@gmail.com", "9890123456", "meena@me"),
+    ("alok@hotmail.com", "9901234567", "alok_007"),
+    ("deepak@gmail.com", "9012345678", "deepak@xyz");
 Query OK, 11 rows affected (0.01 sec)
 Records: 11  Duplicates: 0  Warnings: 0
 
@@ -266,3 +266,32 @@ GROUP BY department
 HAVING COUNT(*) > 5  
 ORDER BY department ASC  
 LIMIT 10 OFFSET 2;
+
+
+-- update data
+
+UPDATE users SET email = 'new@gmail.com' WHERE user_id = 5;
+
+SELECT * FROM users WHERE user_id = 5;
+
+update users set mobile="1112223333" where user_id = 2;
+
+SELECT * FROM users
+
+-- delete data
+
+delete from users where user_id = 14;
+
+SELECT * FROM users
+
+delete from users where email LIKE '%yahoo.com';
+
+SELECT * FROM users;
+
+delete from users where is_active = 0;
+
+DELETE FROM users WHERE user_id = 6;
+
+SELECT * FROM users;
+
+-- Indexing
