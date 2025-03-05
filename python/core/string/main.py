@@ -18,6 +18,21 @@
 # v = vaidik()
 # print(type(v))
 
+# Escap sequense
+# print("Brijesh Gondaliya")
+# print("Brijesh Go\\ndaliya")
+
+# print("my name is "brijesh gondaliya"")
+
+# print("\\")
+# print("\\\\")
+# print("\"")
+# print("\'")
+
+
+# print("my name is \"brijesh gondaliya\"")
+# print('my name is \'brijesh gondaliya\'')
+
 
 code = "python" # iterable object
 
@@ -96,3 +111,19 @@ dot = "python programming for everybOdy".lower()
 # print(password.isalpha()) # for alpha
 # print(password.isalnum()) # for apla and numeric value
 # print(not password.isalnum()) # for speical symbol
+
+# string formating
+
+# print("This is a python book and their price is 345.60. And, it has total 500 pages")
+# print("This is a java book and their price is 545.60. And, it has total 700 pages")
+
+# name = input("Enter a book-name: ")
+# price = float(input("Enter a book-price: "))
+# pages = int(input("Enter a book-pages: "))
+# print(f"This is a {name} book and their price is {price}. And, it has total {pages} pages")
+# print("This is a {} book and their price is {}. And, it has total {} pages".format(name, price, pages))
+# print("This is a {0} book and their price is {1}. And, it has total {2} pages".format(name, price, pages))
+# print("This is a {1} book and their price is {2}. And, it has total {3} pages".format(name,name, price, pages))
+# print("This is a %s book and their price is %.2f. And, it has total %d pages" % (name, price, pages))
+# print("This is a ", name, " book and their price is ", price, ". And, it has total ", pages, "pages")
+

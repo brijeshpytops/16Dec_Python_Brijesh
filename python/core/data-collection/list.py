@@ -94,3 +94,33 @@ nums[2] = 2222
 
 # nums.reverse()
 # print(nums)
+
+num = [1,2,3,4,5]
+alpha = ['a', 'b', 'c', 'd', 'e']
+# [[1, 'a'], [2, 'b'] ....]
+
+# if len(num) == len(alpha):
+#     pair_list = []
+#     for pair_number in range(1, len(num)+1):
+#         pair = [num[pair_number-1], alpha[pair_number-1]]
+#         pair_list.append(pair)
+#     print(pair_list)
+
+# words = ['apple', 'books', 'teachers', 'mango', 'elephants', 'python']
+
+# [
+#     [number_of_length, number_of_vowels, num_of_constant, num_of_special_symols, number_of_digits],
+#     [5, 2, 3, 0, 0],
+#     [5, 2, 3, 0, 0]
+# ]
+
+
+# neasted_list = [1,2,[3,4,[5,[6,7,[8],9,10,[11,[12,[13]]]]]]]
+# print(len(neasted_list))
+# print(neasted_list[2])
+# print(neasted_list[2][2])
+# print(neasted_list[2][2][1])
+# print(neasted_list[2][2][1][2][0])
+# print(neasted_list[2][2][1][2][-1])
+
+# print([1,2,3,4].append(5))
